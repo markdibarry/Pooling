@@ -1,4 +1,4 @@
-namespace GameCore.Utility;
+namespace GameCore.Pooling;
 
 /// <summary>
 /// Represents a type that can be stored in a pool. Pools maintain
