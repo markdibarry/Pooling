@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
 
@@ -11,17 +11,17 @@
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <OutputPath>./nupkg</OutputPath>
     <DebugType>portable</DebugType>
-    <IlcDisableReflection>true</IlcDisableReflection>
+    <IsAotCompatible>true</IsAotCompatible>
 
     <Title>Pooling</Title>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <Description>A pooling library for use with Godot.</Description>
     <Copyright>© 2026 Mark DiBarry</Copyright>
     <Authors>Mark DiBarry</Authors>
     <Company>Mark DiBarry</Company>
 
     <PackageId>GameCore.Pooling</PackageId>
-    <PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+    <PackageReleaseNotes>Set as AOT compatible.</PackageReleaseNotes>
     <PackageIcon>icon.png</PackageIcon>
     <PackageTags>pooling;godot;gamedev</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -40,6 +40,6 @@
 
   <ItemGroup>
     <PackageReference Include="GodotSharp" Version="4.5.0" />
-    <PackageReference Include="GameCore.SceneHelpers" Version="0.0.2" PrivateAssets="none" />
+    <PackageReference Include="GameCore.SceneHelpers" Version="0.0.3" PrivateAssets="none" />
   </ItemGroup>
 </Project>
